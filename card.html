@@ -1,0 +1,199 @@
+<div class="divTable blueTable">
+    <div class="divTableBody">
+        <div class="divTableRow">
+            <div class="divTableCell" style="width: 20%;" align="left">
+                <div class="icon" style="background-image: url('{{Person1}}.png');">
+                    <div id="iconx">{{Audio1}}</div>
+                </div>
+            </div>
+            <div class="divTableCell dialog" align="left">
+                <div class="type">{{type:Phrase1}}</div>
+                <div>{{hint:Hint1}}</div>
+                <div style="color: rgb(73, 73, 73);">{{Trasn1}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="space"></div>
+<div class="divTable blueTable">
+    <div class="divTableBody">
+        <div class="divTableRow">
+            <div class="divTableCell " style="width: 20%;" align="left">
+                <div class="icon" style="background-image: url('{{Person2}}.png');">
+                    <div id="iconx">{{Audio2}}</div>
+                </div>
+            </div>
+            <div class="divTableCell dialog" align="left">
+                <div style="font-weight: bold;">{{Phrase2}}</div>
+                <div style="color: green;">{{Trasn2}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    function ChangeHint() {
+        var x = document.getElementsByClassName("hint");
+        //alert (x[0].innerHTML);
+        if (x[0].innerHTML = "Show Hint1") {
+            x[0].innerHTML = "Dica";
+        }
+        typeans = document.getElementById("typeans");
+        if (typeans) {
+            typeans.focus();
+        }
+    }
+    window.onload = ChangeHint();
+</script>
+
+<style>
+    div {
+        padding: 2px;
+    }
+
+    .space {
+        height: 20px;
+    }
+
+    .card {
+        font-family: Calibri;
+        font-size: 16px !important;
+        text-align: center;
+        color: black;
+    }
+
+    /* .intro {
+       
+        margin-bottom: 20px;
+        color: #999999;
+        font-size: 18px !important;
+    } */
+
+    #typeans {
+        font-family: calibri !important;
+    }
+
+    .type {
+        font-size: 10px;
+        font-weight: bold;
+        border-radius: 20px;
+    }
+
+    .icon {
+        height: 60px;
+        width: 60px;
+        /* overflow: auto;
+        padding: 0px 0px 0px 15px;  */
+        background-size: 100% auto;
+    }
+
+    #iconx {
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    #note {
+        -webkit-border-radius: 19px;
+        -moz-border-radius: 19px;
+        border-radius: 19px;
+        -webkit-box-shadow: 6px 6px 8px #000000;
+        -moz-box-shadow: 6px 6px 8px #000000;
+        box-shadow: 6px 6px 8px #000000;
+        background-color: #F0E68C;
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+    table,
+    th,
+    td {
+        margin: 0 auto;
+        /* or margin: 0 auto 0 auto */
+        text-align: left;
+        vertical-align: top;
+        border: 10px solid transparent;
+    }
+
+    .tag>img {
+        position: relative;
+        top: 20px;
+        left: 0px;
+        height: 31px;
+    }
+
+    /* ########################################## table ########################### */
+    div.dialog {
+        width: 100%;
+        text-align: left;
+        background: #DEE8FF;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: 10px;
+        margin: 10px;
+
+    }
+
+    .divTable.blueTable .divTableCell,
+    .divTable.blueTable .divTableHead {
+        border: 0px solid #AAAAAA;
+    }
+
+    .blueTable .tableFootStyle {
+        font-size: 14px;
+    }
+
+    .blueTable .tableFootStyle .links {
+        text-align: right;
+    }
+
+    .blueTable .tableFootStyle .links a {
+        display: inline-block;
+        background: #1C6EA4;
+        color: #FFFFFF;
+        padding: 2px 8px;
+        border-radius: 5px;
+    }
+
+    .blueTable.outerTableFooter {
+        border-top: none;
+    }
+
+    .blueTable.outerTableFooter .tableFootStyle {
+        padding: 3px 5px;
+    }
+
+    /* DivTable.com */
+    .divTable {
+        display: table;
+    }
+
+    .divTableRow {
+        display: table-row;
+    }
+
+    .divTableHeading {
+        display: table-header-group;
+    }
+
+    .divTableCell,
+    .divTableHead {
+        display: table-cell;
+        vertical-align: top;
+        padding: 3px
+    }
+
+    .divTableHeading {
+        display: table-header-group;
+    }
+
+    .divTableFoot {
+        display: table-footer-group;
+    }
+
+    .divTableBody {
+        display: table-row-group;
+    }
+</style>
